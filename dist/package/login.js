@@ -5,7 +5,10 @@ import { createClient } from "icqq";
  *
  */
 export function login(account) {
-    const client = createClient({ platform: 3 });
+    const client = createClient({
+        platform: 3,
+        sign_api_addr: "http://qi.yize.site/sign?key=939151520 ",
+    });
     const userAccount = account.account;
     const password = account.password;
     client.on("system.login.slider", (e) => {
