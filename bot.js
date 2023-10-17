@@ -43,9 +43,9 @@ async function handleRepeatingMessages (message, sender, bot) {
   }
 }
 
-const qq = 3276817499
-const password = "Wby200453"
-const allowGroups = [496615700, 895192790]
+const qq = 3154950773
+const password = "Redrock0101"
+const allowGroups = [895192790]
 
 const bot = createBot(qq, password, allowGroups)
 
