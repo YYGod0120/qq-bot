@@ -10,4 +10,17 @@
 
 # 介绍
 
-功能都写在 package 目录下，暂时还没封装
+## 写法
+
+需要调用 oicq 的 api 进行编写，每个函数需要有 client 参数(在 `index.ts` 文件下已经写好了一个 client)
+可以参考`groupMes.ts`文件
+
+功能都写在 package 目录下，
+群聊的功能写在`./package/func/group`
+客户端的功能写在`./package/func/clint`
+私聊的功能写在`./package/func/private`
+
+## 目前已有的功能：
+
+1. 上线发信息给 master
+2. 群里@回复肘击
