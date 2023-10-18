@@ -3,21 +3,25 @@ import { Client, segment } from "icqq";
 export function groupMesReply(client: Client) {
   client.on("system.online", () => {
     //运用sendPrivateMsg实现发送私聊消息
-    client.sendGroupMsg(groupID, "fuck all 我tm能用了");
-
-    //监听所有私聊消息
-    client.on("message.private", (event) => {
-      client.sendPrivateMsg(masterID, "123456");
-      console.log(
-        `收到私聊消息来自${event.sender.user_id}, 文本内容为:${event.raw_message}`
-      );
-    });
-
+    client.sendGroupMsg(groupID, "Hello,我来上班咯");
     //监听群聊消息
     client.on("message.group", (event) => {
-      if (event.atme) {
+      if (event.atme && event.raw_message.includes("牢大")) {
         client.sendGroupMsg(groupID, [
-          "小心我肘击你",
+          "小心给你一肘击",
+          segment.image("/package/asset/emoji/koubi.jpg"),
+          segment.at(event.sender.user_id),
+        ]);
+      } else if (event.raw_message.includes("前端的神")) {
+        client.sendGroupMsg(groupID, [
+          "那必然是我张佐科张部大大",
+          segment.image("/package/asset/emoji/zzk.jpg"),
+          segment.at(event.sender.user_id),
+        ]);
+      } else if (event.raw_message.includes("你好")) {
+        client.sendGroupMsg(groupID, [
+          "你好",
+          segment.face(21),
           segment.at(event.sender.user_id),
         ]);
       }
