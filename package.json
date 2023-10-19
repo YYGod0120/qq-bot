@@ -5,7 +5,6 @@
   "description": "基于oicq的qq聊天机器人",
   "main": "bot.js",
   "dependencies": {
-    "@redrock-qq-bot/core": "^0.1.2",
     "icqq": "^0.6.1",
     "typescript": "^5.2.2"
   },

@@ -2,7 +2,7 @@
 
 > 重新找到一个 icqq，oicq2.0，api 基本相同，但是有人维护，登录等等一些问题能解决。
 
-[oicq](https://github.com/icqqjs/icqq) icqq 的 api 和 oicq 是一致的，写功能要调用这儿的 api
+[oicq](https://github.com/icqqjs/oiqq) icqq 的 api 和 oicq 是一致的，写功能要调用这儿的 api
 
 [icqq](https://github.com/icqqjs/icqq) oicq 不维护了，换成 icqq 来写
 

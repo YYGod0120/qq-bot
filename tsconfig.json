@@ -1,5 +1,4 @@
 {
-  
   "compilerOptions": {
     /* Base Options: */
     "esModuleInterop": true,
@@ -18,14 +17,15 @@
     "moduleResolution": "NodeNext", // 使用 Node.js 模块解析策略
     "sourceMap": true,
     /* If your code doesn't run in the DOM: */
-    "lib": ["es2022"],
+    "lib": [
+      "es2022"
+    ],
     /* If you're building for a library: */
     "declaration": true,
     /* If you're building for a library in a monorepo: */
     "composite": true,
     "declarationMap": true
   },
-
   "include": [
     "./package/**/*.ts",
     "./*.ts"
