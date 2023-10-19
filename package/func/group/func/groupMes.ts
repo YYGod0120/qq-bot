@@ -4,7 +4,6 @@ import { question,answer} from "../data/qa.js";
 /**
  * 消息回复
  *
- * 只有牢大，前端的神，你好三个关键词。其他的还在想
  *
  * @param {Client}
  *
