@@ -1,0 +1,18 @@
+{
+  "--begin--": "该设备为随机生成，丢失后不能得到原先配置",
+  "product": "ICQQ-C6B74",
+  "device": "C8820",
+  "board": "97EBD",
+  "brand": "FAFE",
+  "model": "ICQQ 77E8",
+  "wifi_ssid": "HUAWEI-3ac1060",
+  "bootloader": "U-boot",
+  "display": "IC.0560884.1190",
+  "boot_id": "5fc21e15-7543-df50-a4ad-37a216210701",
+  "proc_version": "Linux version 5.10.101-android10-7d19db6a",
+  "mac_address": "02:00:00:00:00:00",
+  "ip_address": "192.168.24.36",
+  "android_id": "245a922d90b6956b",
+  "incremental": "6320021163",
+  "--end--": "修改后可能需要重新验证设备。"
+}
