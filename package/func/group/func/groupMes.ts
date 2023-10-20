@@ -16,9 +16,9 @@ export function groupMesReply(client: Client) {
     if (event.atme) {
      if (event.raw_message.includes("前端的神")) {
         client.sendGroupMsg(groupID, [
+          segment.at(event.sender.user_id),
           "那必然是我们张佐科张部大大辣",
           segment.image("/package/asset/emoji/zzk.jpg"),
-          segment.at(event.sender.user_id),
         ]);
       } else if (event.raw_message.includes("help")) {
         client.sendGroupMsg(groupID, [
@@ -35,50 +35,50 @@ export function groupMesReply(client: Client) {
           segment.face(21),
           segment.at(event.sender.user_id),
         ]);
-      } else if (event.raw_message.includes(question.fun)) {
+      } else if (event.raw_message.includes("功能")) {
         client.sendGroupMsg(groupID, [
           answer.fun,
           segment.at(event.sender.user_id),
         ]);
-      } else if (event.raw_message.includes(question.teach)) {
+      } else if (event.raw_message.includes("教学")) {
         client.sendGroupMsg(groupID, [
           answer.teach,
           segment.at(event.sender.user_id),
         ]);
-      } else if (event.raw_message.includes(question.zero_basis)) {
+      } else if (event.raw_message.includes("0基础")) {
         client.sendGroupMsg(groupID, [
           answer.zero_basis,
           segment.at(event.sender.user_id),
         ]);
-      } else if (event.raw_message.includes(question.home_work)) {
+      } else if (event.raw_message.includes("作业")) {
         client.sendGroupMsg(groupID, [
           answer.home_work,
           segment.at(event.sender.user_id),
         ]);
-      } else if (event.raw_message.includes(question.exam)) {
+      } else if (event.raw_message.includes("考核")) {
         client.sendGroupMsg(groupID, [
           answer.exam,
           segment.at(event.sender.user_id),
         ]);
-      } else if (event.raw_message.includes(question.source)) {
+      } else if (event.raw_message.includes("资料")) {
         client.sendGroupMsg(groupID, [
           answer.source,
           segment.at(event.sender.user_id),
         ]);
-      } else if (event.raw_message.includes(question.hazikaxi)) {
+      } else if (event.raw_message.includes("超级害羞，不敢问问题！")) {
         client.sendGroupMsg(groupID, [
           answer.hazikaxi,
           segment.at(event.sender.user_id),
         ]);
-      } else if (event.raw_message.includes(question.study)) {
+      } else if (event.raw_message.includes("学习注意")) {
         client.sendGroupMsg(groupID, [
           answer.study,
           segment.at(event.sender.user_id),
         ]);
       } else {
         client.sendGroupMsg(groupID, [
-          "卷饼不知道哦,如果有问题，help然后@我吧？",
           segment.at(event.sender.user_id),
+          "卷饼不知道哦,如果有问题，help然后@我吧？",
         ]);
       }
     }

@@ -9,6 +9,6 @@ export function index() {
     platform: 1,
     sign_api_addr: sign_api_addr,
   });
-  login({ account: 2907724711, password: "yangg308911" }, client);
+  login({ account: 3154950773, password: "Redrock0101" }, client);
   group(client);
 }
