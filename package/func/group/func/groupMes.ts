@@ -10,7 +10,7 @@ import { question,answer} from "../data/qa.js";
  */
 export function groupMesReply(client: Client) {
   //运用sendPrivateMsg实现发送私聊消息
-  client.sendGroupMsg(groupID, "Hello");
+  client.sendGroupMsg(groupID, "早上好！新的一天的学习就要开始辣！");
   //监听群聊消息
   client.on("message.group", (event) => {
     if (event.atme) {
@@ -22,7 +22,7 @@ export function groupMesReply(client: Client) {
         ]);
       } else if (event.raw_message.includes("help")) {
         client.sendGroupMsg(groupID, [
-          "尝试提出以下问题@我吧？\n"
+          "尝试提出以下问题@我吧？"
           +question.fun
           +question.teach
           +question.home_work
