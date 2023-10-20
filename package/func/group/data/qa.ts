@@ -1,12 +1,12 @@
 export const question={
-  fun:"卷饼有什么功能？\n",
-  teach:"我们前端的教学模式是什么捏？\n",
-  zero_basis:"零基础能进红岩吗？\n",
-  home_work:"课后作业一般都有什么？\n",
-  exam:"考核都有什么？\n",
-  source:"学习资料从哪里获取？\n",
-  hazikaxi:"超级害羞，不敢问问题！\n",
-  study:"网校学习注意事项\n",
+  fun:"1.卷饼有什么功能？\n",
+  teach:"2.我们前端的教学模式是什么捏？\n",
+  zero_basis:"3.零基础能进红岩吗？\n",
+  home_work:"4.课后作业一般都有什么？\n",
+  exam:"5.考核都有什么？\n",
+  source:"6.学习资料从哪里获取？\n",
+  study:"7.网校学习注意事项\n",
+  hazikaxi:"8.超级害羞，不敢问问题！\n",
 }
 export const answer={
   fun:"卷饼有以下功能：\n"+
